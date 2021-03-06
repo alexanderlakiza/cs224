@@ -2,6 +2,7 @@
 ###### The course is taught by Chernysheva Anastasiia Vladimirovna [(ISU)](https://isu.ifmo.ru/pls/apex/f?p=2143:PERSON:102085728817403::NO:RP:PID:182049)
 ---
 ## This repo is intended for posting my solutions of the course's tasks
+###### Check [1sem branch] in order to see the final task of the 1st semester
 ###### Whole course is in russian
 ---
 ## Homeworks Status Table
@@ -10,7 +11,7 @@
 |:-:|:-:|:-:|:-:|:-:|
 | 1 | Collecting Data | [task1.py](https://github.com/alexanderlakiza/cs224/blob/main/task1.py) | Verified | 10/10 |
 | 2 | Regular Expressions | [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2.ipynb) | In progress |  |
-| 3 |  |  |  |  |
+| 3 | TBA 16.03.2021 |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
 
