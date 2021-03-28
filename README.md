@@ -10,10 +10,10 @@
 | № | Title | Files | Status | Points |
 |:-:|:-:|:-:|:-:|:-:|
 | 1 | Collecting Data | [task1.py](https://github.com/alexanderlakiza/cs224/blob/main/task1.py) | Verified | 10/10 |
-| 2 | Regular Expressions | [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2.ipynb) | In progress |  |
-| 3 | TBA 16.03.2021 |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| 2 | Regular Expressions | [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2.ipynb) | Is being checked |  |
+| 3 | Lev. Distance | [task3.py](https://github.com/alexanderlakiza/cs224/blob/main/task3.py) and [task3_ui.py](https://github.com/alexanderlakiza/cs224/blob/main/task3_ui.py)  | In progress |  |
+| 4 | Partial Markup |  | In progress |  |
+| 5 | TBA 30.03.2021 |  |  |  |
 
 ---
 ### Full description of each task
@@ -30,13 +30,17 @@
     * [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2.ipynb)
     In the file you can check comments in order to understand what I did step by step.
      
-3. TBA 16.03.2021
+3. Levenshtein Distance
+    The aim of this task is to get familiar with Levenshtein Distance. The task is to write a function that will show ids of documents where the word entered by user appears. A function must have exceptions in case of misspellings or absence of entered word. In order to check how the function works you need to run task3_ui.py and follow instructions.
+    The files of this task are:
+    * [task3.py](https://github.com/alexanderlakiza/cs224/blob/main/task3.py) 
+    * [task3_ui.py](https://github.com/alexanderlakiza/cs224/blob/main/task3_ui.py)
 
 ---
 
-###### Who am I?
+# Who am I?
 My name is Alexander Lakiza. I am an undergraduated [ITMO University](https://itmo.ru/ru/) student studying 45.03.04 bachelor [Intelligent systems in the humanities](https://abit.itmo.ru/program/14533/) (the group id is K3242).
-###### Where you can find me?
+## Where you can find me?
 * [VK](https://vk.com/alexanderlakiza)
 * [Instagram](https://www.instagram.com/alexanderlakiza/)
 * [Twitter](https://twitter.com/alexlakiza)
