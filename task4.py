@@ -1,19 +1,77 @@
 import json
 import pymorphy2
+import pandas as pd
 
 
 morph = pymorphy2.MorphAnalyzer()
 
+
 with open("corpus_as_dict_of_norms.json") as f:
     normed_dict = json.load(f)
 
-# print(normed_dict)
 
-word = 'слабый'
-print(morph.parse(word)[0].tag)
-tokens_pos = {}
-# for i in range(len(normed_dict)):
-#     tokens_pos[list(normed_dict.keys())[i]] =
-init = {'Абиссаль':['абиссаль', 'абиссальный', 'зона', 'зона', 'больший', 'морской', 'глубина', 'населить', 'сообщество', 'бентос', 'океанический', 'дно', 'рельеф', 'зона', 'представить', 'глубоководный', 'котловина', 'подводный', 'хребет', 'и', 'плато', 'абиссаль', 'характеризоваться', 'отсутствие', 'дневный', 'свет', 'слабый', 'подвижность', 'вода', 'живой', 'организм', 'такой', 'как', 'живоглот', 'батиптер', 'рыба', 'отряд', 'удильщикообразный', 'населять', 'абиссальный', 'зона', 'способный', 'выдерживать', 'значительный', 'глубинный', 'океанический', 'давление', 'характеризовать', 'этот', 'зона', 'животное', 'в', 'основное', 'слепой', 'отличаться', 'древний', 'происхождение', 'вид', 'на', 'день', 'обитать', 'различный', 'вид', 'иглокожий', 'губка', 'анемон', 'червь', 'и', 'ракообразный', 'у', 'некоторый', 'вид', 'животное', 'образовываться', 'люминесцентный', 'орган', 'в', 'учёный', 'обнаружить', 'оазис', 'жизнь', 'абиссаль', 'там', 'около', 'выход', 'термальный', 'вода', 'и', 'газ', 'появляться', 'уникальный', 'группа', 'организм', 'основа', 'они', 'жизнь', 'служить', 'тепловой', 'и', 'химический', 'энергия', 'термальный', 'вода', 'вода', 'отличаться', 'слабый', 'подвижность', 'и', 'очень', 'низкий', 'температура', 'c', 'низкий', 'содержание', 'биогенный', 'вещество', 'около', 'дно', 'мировой', 'океан', 'покрыть', 'абиссальный', 'отложение', 'ниже', 'абиссальный', 'зона', 'находиться', 'ультраабиссальный', 'зона']}
-sub = [(word, morph.parse(word)[0].tag.POS) for word in init['Абиссаль']]
-print(sub)
+"""
+normed_dict_with_pos = {}
+for title in list(normed_dict.keys()):
+    normed_dict_with_pos[title] = [(word, morph.parse(word)[0].tag.POS) for word in normed_dict[title]
+                                   if morph.parse(word)[0].tag.POS is not None]
+
+
+with open("corpus_as_dict_of_norms_and_pos.json", "w") as f:
+    # Запишем корпус в виде словаря в json, чтобы потом использовать готовый словарь
+    # вместо использования pymorphy2
+    json.dump(normed_dict_with_pos, f, ensure_ascii=False)
+"""
+
+
+with open("corpus_as_dict_of_norms_and_pos.json") as f:
+    corpus_tokens_pos = json.load(f)
+
+
+for title in list(corpus_tokens_pos.keys()):
+    for word in list(corpus_tokens_pos[title]):
+        if word[1] == 'ADJF':
+            word[1] = 'ADJ'
+        elif word[1] == 'ADJS':
+            word[1] = 'ADJ'
+        elif word[1] == 'COMP':
+            word[1] = 'ADJ'
+        elif word[1] == 'INFN':
+            word[1] = 'VERB'
+        else:
+            pass
+
+# print(corpus_tokens_pos)
+
+corpus_pos_ratios = {}
+for title in list(corpus_tokens_pos.keys()):
+    value = corpus_tokens_pos[title]
+    poses_of_doc = [token[1] for token in value]
+    doc_poses_ratios = [[pos, round(poses_of_doc.count(pos)/len(poses_of_doc), 3)]
+                        for pos in set(poses_of_doc)]
+    corpus_pos_ratios[title] = doc_poses_ratios
+
+
+lengths_pos = list(map(len, list(corpus_pos_ratios.values())))
+index_max_n_pos = lengths_pos.index(max(lengths_pos))
+used_pos = list(corpus_pos_ratios.values())[index_max_n_pos]
+used_pos = [i[0] for i in used_pos]
+
+
+sorted_c_pos_ratios = {}
+for title in list(corpus_pos_ratios.keys()):
+    subdict = {}
+    for pos in used_pos:
+        subdict[pos] = 0
+    sorted_c_pos_ratios[title] = subdict
+
+    for pos_ratio in corpus_pos_ratios[title]:
+        subdict[pos_ratio[0]] = pos_ratio[1]
+print(sorted_c_pos_ratios)
+
+
+df = pd.DataFrame.from_dict(sorted_c_pos_ratios, orient='index')
+print(df)
+df.to_csv("pos_ratios.csv")
+data = pd.read_csv('pos_ratios.csv')
+print(data.head())
