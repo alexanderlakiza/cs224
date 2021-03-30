@@ -80,20 +80,20 @@ def del_punct(tokens_list):
     return [token.lower() for token in tokens_list if token not in punct]
 
 
-"""
+
 tokens = word_tokenize(corpus)
 tokens = del_punct(tokens)
 
 normed_tokens = [morph.parse(i)[0].normal_form for i in tokens  # Список начальных форм всех токенов
                  if str.isalpha(morph.parse(i)[0].normal_form)]
-print(normed_tokens)
+# print(normed_tokens)
 unique_norm_tokens = list(set(normed_tokens))
 
 with open("unique_norms_in_corpus.json", "w") as f:
     # Запишем корпус в виде словаря в json, чтобы потом использовать готовый словарь
     # вместо использования pymorphy2
     json.dump(unique_norm_tokens, f, ensure_ascii=False)
-"""
+
 
 
 """
