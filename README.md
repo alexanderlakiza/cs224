@@ -1,7 +1,7 @@
 # Computational Linguistics
 ###### The course is taught by Chernysheva Anastasiia Vladimirovna [(ISU)](https://isu.ifmo.ru/pls/apex/f?p=2143:PERSON:102085728817403::NO:RP:PID:182049)
 ---
-## This repo is intended for posting my solutions of the course's tasks
+### This repo is intended for posting my solutions of the course's tasks
 ###### Check [1sem branch] in order to see the final task of the 1st semester
 ###### Whole course is in russian
 ---
@@ -12,11 +12,11 @@
 | 1 | Collecting Data | [task1.py](https://github.com/alexanderlakiza/cs224/blob/main/task1.py) | Verified | 10/10 |
 | 2 | Regular Expressions | [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2.ipynb) | Is being checked |  |
 | 3 | Lev. Distance | [task3.py](https://github.com/alexanderlakiza/cs224/blob/main/task3.py) and [task3_ui.py](https://github.com/alexanderlakiza/cs224/blob/main/task3_ui.py)  | Is being checked |  |
-| 4 | Partial Markup | [task4.py](https://github.com/alexanderlakiza/cs224/blob/main/task4.py) and [task4_stat.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task4_stat.ipynb) | Is being checked |  |
+| 4 | POS Tagging | [task4.py](https://github.com/alexanderlakiza/cs224/blob/main/task4.py) and [task4_stat.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task4_stat.ipynb) | Is being checked |  |
 | 5 | TBA 30.03.2021 |  |  |  |
 
 ---
-### Full description of each task
+## Full description of each task
 ###### All the comments are in russian, as the course is taight in russian.
 1. __Collecting Data__ 
     The aim of the task is to collect more than 200 documents (totally volumed of more than 10000 words) using Python from diferent sources, for example, vk.com groups, wikipedia, etc. I decided to use wikipedia API as it was my first experience of using it. 
@@ -36,8 +36,8 @@
     * [task3.py](https://github.com/alexanderlakiza/cs224/blob/main/task3.py) 
     * [task3_ui.py](https://github.com/alexanderlakiza/cs224/blob/main/task3_ui.py)
 
-4. __Partial Markup__ 
-    The aim of this task is to mark up parts of speech in the corpus. Then find unusual documents where a ratio of any part of speech differs by a value greater than two standard deviations. Unusual documents are introduced in task4_stat.ipynb.
+4. __POS Tagging__ 
+    The aim of this task is to tag parts of speech in the corpus, then find unusual documents where a ratio of any part of speech differs by a value greater than two standard deviations. Unusual documents are introduced in task4_stat.ipynb.
     The files of this task are:
     * [task4.py](https://github.com/alexanderlakiza/cs224/blob/main/task4.py)
     * [task4_stat.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task4_stat.ipynb)
