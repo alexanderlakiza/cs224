@@ -11,6 +11,7 @@ with open("corpus_as_dict_of_norms.json") as f:
 
 
 """
+# Создаём словарь с частью речи для каждого токена
 normed_dict_with_pos = {}
 for title in list(normed_dict.keys()):
     normed_dict_with_pos[title] = [(word, morph.parse(word)[0].tag.POS) for word in normed_dict[title]
@@ -28,6 +29,8 @@ with open("corpus_as_dict_of_norms_and_pos.json") as f:
     corpus_tokens_pos = json.load(f)
 
 
+# Пишем все виды глаголов в одну категорию VERB
+# Пишем все виды прилагательных в одну категорию ADJ
 for title in list(corpus_tokens_pos.keys()):
     for word in list(corpus_tokens_pos[title]):
         if word[1] == 'ADJF':
@@ -41,8 +44,9 @@ for title in list(corpus_tokens_pos.keys()):
         else:
             pass
 
-# print(corpus_tokens_pos)
 
+# Создаём словарь, где для каждого документа есть
+# доля каждой части речи в этом документе
 corpus_pos_ratios = {}
 for title in list(corpus_tokens_pos.keys()):
     value = corpus_tokens_pos[title]
@@ -52,12 +56,15 @@ for title in list(corpus_tokens_pos.keys()):
     corpus_pos_ratios[title] = doc_poses_ratios
 
 
+# Максимальный набор используемых частей речи
 lengths_pos = list(map(len, list(corpus_pos_ratios.values())))
 index_max_n_pos = lengths_pos.index(max(lengths_pos))
 used_pos = list(corpus_pos_ratios.values())[index_max_n_pos]
-used_pos = [i[0] for i in used_pos]
+used_pos = [i[0] for i in used_pos]  # 11 частей речи, использующихся в корпусе
 
 
+# Сортируем доли все частей речи в каждом доке в одном порядке
+# согласно порядку в used_pos: List
 sorted_c_pos_ratios = {}
 for title in list(corpus_pos_ratios.keys()):
     subdict = {}
@@ -67,9 +74,9 @@ for title in list(corpus_pos_ratios.keys()):
 
     for pos_ratio in corpus_pos_ratios[title]:
         subdict[pos_ratio[0]] = pos_ratio[1]
-print(sorted_c_pos_ratios)
 
 
+# Создаём csv-файл для удобства работы с разметкой в Pandas
 df = pd.DataFrame.from_dict(sorted_c_pos_ratios, orient='index')
 print(df)
 df.to_csv("pos_ratios.csv")
