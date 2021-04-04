@@ -13,8 +13,10 @@
 | 2 | Regular Expressions | [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2/task2.ipynb) | Verified | 10/10 |
 | 3 | Lev. Distance | [task3.py](https://github.com/alexanderlakiza/cs224/blob/main/task3/task3.py) and [task3_ui.py](https://github.com/alexanderlakiza/cs224/blob/main/task3/task3_ui.py)  | Verified | 10/10 |
 | 4 | POS Tagging | [task4.py](https://github.com/alexanderlakiza/cs224/blob/main/task4/task4.py) and [task4_stat.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task4/task4_stat.ipynb) | Is being checked |  |
-| 5 |  |  |  |  |
-| 6 |  |  |  |  |
+| 5-6 | Text Vectorization | task5.ipynb and task6.ipynb | In progress |  |
+| 7 | TBA 13.04.21 |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
 
 ---
 ## Full description of each task
