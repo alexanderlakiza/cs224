@@ -20,7 +20,7 @@
 
 ---
 ## Full description of each task
-###### All the comments are in russian, as the course is taight in russian.
+###### All the comments inside the files are in russian, as the course is taight in russian.
 1. __Collecting Data__ 
     The aim of the task is to collect more than 200 documents (totally volumed of more than 10000 words) using Python from diferent sources, for example, vk.com groups, wikipedia, etc. I decided to use wikipedia API as it was my first experience of using it.  
     The files of this task are:
@@ -50,6 +50,9 @@
     The task was completed jointly with Darya Plotskaya and Emina Iskhakova (both K3242)  
     The files of this task are:
     * [task5-6.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task5-6/task5-6.ipynb)
+
+6. __Text Vecorization__
+    Tasks №5 and №6 are combined.
 
 7. __Gensim library__
     
