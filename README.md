@@ -14,9 +14,10 @@
 | 3 | Lev. Distance | [task3.py](https://github.com/alexanderlakiza/cs224/blob/main/task3/task3.py) and [task3_ui.py](https://github.com/alexanderlakiza/cs224/blob/main/task3/task3_ui.py)  | Verified | 10/10 |
 | 4 | POS Tagging | [task4.py](https://github.com/alexanderlakiza/cs224/blob/main/task4/task4.py) and [task4_stat.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task4/task4_stat.ipynb) | Verified | 10/10 |
 | 5-6 | Text Vectorization | [task5-6.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task5-6/task5-6.ipynb) | Is being checked |  |
-| 7 | Gensim library |  | In progress |  |
-| 8 | TBA 27.04.21 |  |  |  |
-|  |  |  |  |  |
+| 7 | Word2Vec |  | In progress |  |
+| 8 | Key Words Graph | [task8.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task8/task8.ipynb) | Is being checked |  |
+| 0 | Document Clustering | [task9.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task9/task9.ipynb) | Is being checked |  |
+| 10 | Topic Modeling (LDA) | [task10.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task10/task10.ipynb) | Is being checked |  |
 
 ---
 ## Full description of each task
@@ -54,14 +55,28 @@
 6. __Text Vecorization__
     Tasks №5 and №6 are combined.
 
-7. __Gensim library__
-    
+7. __Word2Vec__
+
+8. __Key Words Graph__
+    The aim of this task is to plot a pgrap of key words of our corpus. Key words are nouns that were used most. I used networkx library in this task.  
+    The files of this task are:
+    * [task8.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task8/task8.ipynb)
+
+9. __Document Clustering__    
+    The aim of this task is to clusterize documents of our corpus based on NER (Named-Entity-Recognition).  
+    The files of this task are:
+    * [task9.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task9/task9.ipynb)
+
+10. __LDA Topic Modeling__
+    The aim of this task is to make topic modeling (based on LDA) of documents of our corpus. Gensim and pyLDAvis are our friends in this task.  
+    The files of this task are:
+    * [task10.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task10/task10.ipynb) 
 ---
 
 # Who am I?
 My name is Alexander Lakiza. I am an undergraduated [ITMO University](https://itmo.ru/ru/) student studying 45.03.04 bachelor [Intelligent systems in the humanities](https://abit.itmo.ru/program/14533/) (the group id is K3242).
 ## Where you can find me?
 * [VK](https://vk.com/alexanderlakiza)
-* [Instagram](https://www.instagram.com/alexanderlakiza/)
+* [Instagram](https://www.instagram.com/alexlakiza/)
 * [Twitter](https://twitter.com/alexlakiza)
 * [ISU](https://isu.ifmo.ru/pls/apex/f?p=2143:PERSON:102085728817403::NO:RP:PID:285469) (ITMO Web-system)
