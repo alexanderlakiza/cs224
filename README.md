@@ -63,7 +63,7 @@
     * [task8.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task8/task8.ipynb)
 
 9. __Document Clustering__    
-    The aim of this task is to clusterize documents of our corpus based on NER (Named-Entity-Recognition).  
+    The aim of this task is to cluster documents of our corpus based on NER (Named-Entity-Recognition).  
     The files of this task are:
     * [task9.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task9/task9.ipynb)
 
