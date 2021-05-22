@@ -16,7 +16,7 @@
 | 5-6 | Text Vectorization | [task5-6.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task5-6/task5-6.ipynb) | Is being checked |  |
 | 7 | Word2Vec |  | In progress |  |
 | 8 | Key Words Graph | [task8.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task8/task8.ipynb) | Is being checked |  |
-| 0 | Document Clustering | [task9.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task9/task9.ipynb) | Is being checked |  |
+| 9 | Document Clustering | [task9.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task9/task9.ipynb) | Is being checked |  |
 | 10 | Topic Modeling (LDA) | [task10.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task10/task10.ipynb) | Is being checked |  |
 
 ---
