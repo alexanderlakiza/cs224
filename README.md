@@ -3,7 +3,7 @@
 ---
 ### This repo is intended for posting my solutions of the course's tasks
 ###### Check [1sem branch](https://github.com/alexanderlakiza/cs224/tree/1sem) in order to see the final task of the 1st semester
-###### Whole course is in russian
+###### The course is taught in russian
 ---
 ## Homeworks Status Table
 
@@ -13,11 +13,11 @@
 | 2 | Regular Expressions | [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2/task2.ipynb) | Verified | 10/10 |
 | 3 | Lev. Distance | [task3.py](https://github.com/alexanderlakiza/cs224/blob/main/task3/task3.py) and [task3_ui.py](https://github.com/alexanderlakiza/cs224/blob/main/task3/task3_ui.py)  | Verified | 10/10 |
 | 4 | POS Tagging | [task4.py](https://github.com/alexanderlakiza/cs224/blob/main/task4/task4.py) and [task4_stat.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task4/task4_stat.ipynb) | Verified | 10/10 |
-| 5-6 | Text Vectorization | [task5-6.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task5-6/task5-6.ipynb) | Is being checked |  |
-| 7 | Word2Vec |  | In progress |  |
-| 8 | Key Words Graph | [task8.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task8/task8.ipynb) | Is being checked |  |
-| 9 | Document Clustering | [task9.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task9/task9.ipynb) | Is being checked |  |
-| 10 | Topic Modeling (LDA) | [task10.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task10/task10.ipynb) | Is being checked |  |
+| 5-6 | Text Vectorization | [task5-6.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task5-6/task5-6.ipynb) | Verified | 20/20 |
+| 7 | Word2Vec |  | Skipped |  |
+| 8 | Key Words Graph | [task8.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task8/task8.ipynb) | Verified | 10/10 |
+| 9 | Document Clustering | [task9.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task9/task9.ipynb) | Verified | 10/10 |
+| 10 | Topic Modeling (LDA) | [task10.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task10/task10.ipynb) | Verified | 10/10 |
 
 ---
 ## Full description of each task
@@ -32,7 +32,7 @@
     The aim of this task is to get familiar with Python regular expressions. The task is divided into 2 parts. The first part includes 10 mini tasks in order to get used to the syntax of regular expressions. The second part includes the process of cleaning the data collected in the 1st task.  
     The files of this task are:
     * [task2.ipynb](https://github.com/alexanderlakiza/cs224/blob/main/task2/task2.ipynb)
-    In the file you can check comments in order to understand what I did step by step.
+
      
 3. __Levenshtein Distance__ 
     The aim of this task is to get familiar with Levenshtein Distance. The task is to write a function that will show ids of documents where the word entered by user appears. A function must have exceptions in case of misspellings or absence of entered word. In order to check how the function works you need to run task3_ui.py and follow instructions.  
